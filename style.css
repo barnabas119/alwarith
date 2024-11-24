@@ -1,0 +1,36 @@
+/* General Styles */
+/* Body Background */
+body {
+    background-color: #F0F8FF;
+    overflow: hidden;
+}
+
+/* Services Zoom Animation */
+.service-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Buttons in About Us */
+button {
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+    .display-4 {
+        position: absolute;
+        white-space: nowrap; /* Keep text in a single line */
+        animation: scroll-left-right 10s linear infinite; /* Adjust timing as needed */
+        font-size: 2rem;
+        color: #333;
+    }
+
+    @keyframes scroll-left-right {
+        from {
+            left: -100%; /* Start outside the screen on the left */
+        }
+        to {
+            left: 100%; /* End outside the screen on the right */
+        }
+    } 
